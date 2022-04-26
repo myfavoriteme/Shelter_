@@ -1,0 +1,211 @@
+:root{
+    font-size: 10px;
+    --color-primary-color: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+    --color-light-xl: #FFFFFF;
+    --color-dark-s: #CDCDCD;
+    --color-light-s: #FAFAFA;
+    --color-dark-l: #545454;
+    --color-light-l: #F6F6F6;
+    --color-dark-3xl: #292929;
+}
+@font-face {
+    font-family: Georgia;
+    src: url(../../assets/fonts/Georgia.woff);
+}
+@font-face {
+    font-family: Arial;
+    src: url(../../assets/fonts/ArialMT.woff);
+}
+.main-header{
+    
+    background-color: white;
+    width: 100%;
+}
+.header{
+    display: block;
+    height: fit-content;
+    box-sizing: border-box;
+    /* width: 100%; */
+    /* padding: 3rem 3rem; */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* padding-right: 3rem; */
+    z-index: 1;
+}
+.wrapper{
+    /* box-sizing: border-box; */
+    width: 100%;
+    align-items: center;
+}
+.pets_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 134.2rem;
+    width: 100%;
+    padding-top: 7.7rem;
+    background-color: var(--color-light-l);
+    box-sizing: border-box;
+}
+.body{
+    margin: 0;
+}
+
+.title{
+    color: var(--color-dark-l);
+}
+.logo-subtitle{
+    color: var(--color-dark-l);
+}
+.list-item{
+    color: var(--color-dark-l);
+}
+.list-item_hovered{
+    color: var(--color-dark-3xl);
+}
+.list-item:hover{
+    color: var(--color-dark-3xl);
+}
+.main_title{
+    text-align: center;
+    width: 40rem;
+    margin-bottom: 6rem;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 120rem;
+    
+}
+.navigation{
+    margin-top: 3rem;
+}
+p{
+    margin: auto;
+    font-size: 2.5rem;
+}
+.navigation__button{
+    
+    margin: 0 1rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    border: 0.2rem solid var(--color-primary-color);
+    background: none;
+    border-radius: 10rem;
+    
+}
+.navigation__button_hover:hover{
+    background-color: var(--color-primary-light);
+    cursor: pointer;
+}
+.left{
+    height: 1.1rem;
+    transform: rotate(180deg);
+}
+.button_gray{
+    color: var(--color-dark-s);
+    border-color: var(--color-dark-s);
+}
+
+.georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--color-primary-color);
+    border-color: var(--color-primary-color);
+    color: var(--color-dark-3xl);
+}
+.pre{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+@media (max-width: 1279px) {
+    .pets_card:nth-child(4){
+        display: block;
+    }
+    .pets_card:nth-child(6){
+        display: none;
+    }
+    .pets_card:nth-child(7){
+        display: none;
+    }
+    .pets_card{
+        
+        /* margin: 0 auto; */
+    }
+    .cards{
+        height: min-content;
+        width: 58rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    .pets_main{
+        height: min-content;
+    }
+    .navigation{
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 768px){
+    .burger{
+        color: var(--color-dark-l);
+    }
+    .main_title{
+        margin-top: 0;
+        font-size: 2.5rem;
+        text-align: center;
+        max-width: 29rem;
+    }
+    .pets_card:nth-child(3){
+        display: block;
+    }
+    .pets_card:nth-child(4){
+        display: none;
+    }
+    .pets_card:nth-child(5){
+        display: none;
+    }
+    .pets_card:nth-child(6){
+        display: none;
+    }
+    .pets_card:nth-child(8){
+        display: none;
+    }
+    .pets_card{
+        margin: 0 auto 2.9rem auto;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+
+    }
+    .navigation{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation__button{
+        margin: auto;
+    }
+    .cards{
+        width: 100%;
+    }
+    .list-item{
+        color: var(--color-dark-s);
+    }
+    .list-item_hovered{
+        color: white;
+    }
+    .list-item:hover{
+        color: var(--color-light-l);
+    }
+
+}
